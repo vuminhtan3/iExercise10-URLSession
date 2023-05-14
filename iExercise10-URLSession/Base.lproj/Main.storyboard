@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iExercise10_URLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="z5v-4y-Arf">
+                                <rect key="frame" x="100" y="259" width="193" height="359"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxr-p7-7KP">
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="39.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Todos"/>
+                                        <connections>
+                                            <segue destination="66l-1b-C91" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Fi4-Yw-9sC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehe-tI-NNs">
+                                        <rect key="frame" x="0.0" y="79.666666666666686" width="193" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Photos"/>
+                                        <connections>
+                                            <segue destination="Xew-TD-rkE" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="bNb-iu-dFf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYF-cc-nUY">
+                                        <rect key="frame" x="0.0" y="159.66666666666669" width="193" height="39.666666666666657"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Albums"/>
+                                        <connections>
+                                            <segue destination="uVW-Wn-FmF" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Zoe-Fv-Jgd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R4-H8-0EZ">
+                                        <rect key="frame" x="0.0" y="239.33333333333331" width="193" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Comments"/>
+                                        <connections>
+                                            <segue destination="29E-Ji-2GX" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Bd4-0r-2qu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7e-LA-Yvk">
+                                        <rect key="frame" x="0.0" y="319.33333333333337" width="193" height="39.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Posts"/>
+                                        <connections>
+                                            <segue destination="k8x-RD-AYM" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="4Un-wk-Ehe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.76661896705627441" green="0.72014307975769043" blue="0.85561263561248779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z5v-4y-Arf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="1VV-qc-as9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z5v-4y-Arf" secondAttribute="bottom" constant="200" id="fCS-j0-5yb"/>
+                            <constraint firstItem="z5v-4y-Arf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="oEy-h2-bzA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z5v-4y-Arf" secondAttribute="trailing" constant="100" id="zud-Eu-p4o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-2.1126760563380285"/>
+        </scene>
+        <!--Albums View Controller-->
+        <scene sceneID="S4L-8E-26g">
+            <objects>
+                <viewController id="uVW-Wn-FmF" customClass="AlbumsViewController" customModule="iExercise10_URLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dsT-xG-UdW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GfY-qh-GQz">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tsF-nk-2uN">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="709"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-y7-ndY">
+                                        <rect key="frame" x="0.0" y="719" width="353" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lDh-Pk-W60"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="BACK"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="66l-1b-C91" eventType="touchUpInside" id="EJc-XH-LmL"/>
+                                            <action selector="backButtonPressed:" destination="uVW-Wn-FmF" eventType="touchUpInside" id="ZYm-fB-jaR"/>
+                                            <action selector="backButtonPressed:" destination="Xew-TD-rkE" eventType="touchUpInside" id="sAk-c2-mhx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V6q-G5-T5L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GfY-qh-GQz" firstAttribute="leading" secondItem="V6q-G5-T5L" secondAttribute="leading" constant="20" id="1xE-Zr-Kv2"/>
+                            <constraint firstItem="GfY-qh-GQz" firstAttribute="top" secondItem="V6q-G5-T5L" secondAttribute="top" id="JMK-Xb-Tfj"/>
+                            <constraint firstItem="V6q-G5-T5L" firstAttribute="trailing" secondItem="GfY-qh-GQz" secondAttribute="trailing" constant="20" id="PSw-91-Cjg"/>
+                            <constraint firstItem="GfY-qh-GQz" firstAttribute="bottom" secondItem="V6q-G5-T5L" secondAttribute="bottom" id="a1T-ZT-nhb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumsTextView" destination="tsF-nk-2uN" id="NvK-wP-qsK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yid-HU-HGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="-2"/>
+        </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="HYc-KN-llN">
+            <objects>
+                <viewController id="29E-Ji-2GX" customClass="CommentsViewController" customModule="iExercise10_URLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4zM-9p-jqf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tpw-bI-AnW">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gIZ-e5-OnE">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="709"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ5-AD-S8S">
+                                        <rect key="frame" x="0.0" y="719" width="353" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gpw-Uh-myx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="BACK"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="29E-Ji-2GX" eventType="touchUpInside" id="5P4-Qk-g1V"/>
+                                            <action selector="backButtonPressed:" destination="Xew-TD-rkE" eventType="touchUpInside" id="Tdl-Hf-roK"/>
+                                            <action selector="backButtonPressed:" destination="66l-1b-C91" eventType="touchUpInside" id="Uni-Oe-CIQ"/>
+                                            <action selector="backButtonPressed:" destination="uVW-Wn-FmF" eventType="touchUpInside" id="YVQ-wm-M5q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NFH-tT-88X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tpw-bI-AnW" firstAttribute="leading" secondItem="NFH-tT-88X" secondAttribute="leading" constant="20" id="R9A-or-anR"/>
+                            <constraint firstItem="NFH-tT-88X" firstAttribute="trailing" secondItem="tpw-bI-AnW" secondAttribute="trailing" constant="20" id="eTq-uc-Q9j"/>
+                            <constraint firstItem="tpw-bI-AnW" firstAttribute="top" secondItem="NFH-tT-88X" secondAttribute="top" id="iWa-vT-xXy"/>
+                            <constraint firstItem="tpw-bI-AnW" firstAttribute="bottom" secondItem="NFH-tT-88X" secondAttribute="bottom" id="keJ-Xu-6et"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentsTextView" destination="gIZ-e5-OnE" id="L0N-kV-E1r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ps8-Jy-iOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="654"/>
+        </scene>
+        <!--Posts View Controller-->
+        <scene sceneID="BC8-cl-rn8">
+            <objects>
+                <viewController id="k8x-RD-AYM" customClass="PostsViewController" customModule="iExercise10_URLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ioR-ZY-Gp6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tsb-tE-5mW">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8DZ-J4-8eP">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="709"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onz-mc-1cp">
+                                        <rect key="frame" x="0.0" y="719" width="353" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="53P-tS-xD6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="BACK"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="uVW-Wn-FmF" eventType="touchUpInside" id="4wB-Iy-4iq"/>
+                                            <action selector="backButtonPressed:" destination="Xew-TD-rkE" eventType="touchUpInside" id="8q1-QL-tVE"/>
+                                            <action selector="backButtonPressed:" destination="66l-1b-C91" eventType="touchUpInside" id="UmW-zY-0uw"/>
+                                            <action selector="backButtonPressed:" destination="29E-Ji-2GX" eventType="touchUpInside" id="VaU-z4-kLw"/>
+                                            <action selector="backButtonPressed:" destination="k8x-RD-AYM" eventType="touchUpInside" id="wap-QA-k49"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FBW-e7-k89"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FBW-e7-k89" firstAttribute="trailing" secondItem="tsb-tE-5mW" secondAttribute="trailing" constant="20" id="3Aw-F2-DPr"/>
+                            <constraint firstItem="tsb-tE-5mW" firstAttribute="bottom" secondItem="FBW-e7-k89" secondAttribute="bottom" id="PXJ-4S-SkJ"/>
+                            <constraint firstItem="tsb-tE-5mW" firstAttribute="top" secondItem="FBW-e7-k89" secondAttribute="top" id="i4J-Ke-5VF"/>
+                            <constraint firstItem="tsb-tE-5mW" firstAttribute="leading" secondItem="FBW-e7-k89" secondAttribute="leading" constant="20" id="mbD-PC-VHO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="postsTextView" destination="8DZ-J4-8eP" id="PA2-xR-0ia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IU0-zp-aBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="1309"/>
+        </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="hQh-7Z-VDS">
+            <objects>
+                <viewController id="Xew-TD-rkE" customClass="PhotosViewController" customModule="iExercise10_URLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zey-GP-DA4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rZV-WA-rIe">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uCJ-aJ-nIu">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="709"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFh-kb-DRg">
+                                        <rect key="frame" x="0.0" y="719" width="353" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hD5-du-Ccl"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="BACK"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Xew-TD-rkE" eventType="touchUpInside" id="E3D-CX-X7c"/>
+                                            <action selector="backButtonPressed:" destination="66l-1b-C91" eventType="touchUpInside" id="c6o-oW-i1V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Uu-xE-xgN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rZV-WA-rIe" firstAttribute="top" secondItem="2Uu-xE-xgN" secondAttribute="top" id="5Zs-eC-eYf"/>
+                            <constraint firstItem="2Uu-xE-xgN" firstAttribute="bottom" secondItem="rZV-WA-rIe" secondAttribute="bottom" id="VrV-08-dwh"/>
+                            <constraint firstItem="rZV-WA-rIe" firstAttribute="leading" secondItem="2Uu-xE-xgN" secondAttribute="leading" constant="20" id="iMJ-re-isH"/>
+                            <constraint firstItem="2Uu-xE-xgN" firstAttribute="trailing" secondItem="rZV-WA-rIe" secondAttribute="trailing" constant="20" id="vqE-oO-5rZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photosTextView" destination="uCJ-aJ-nIu" id="hDT-Mr-my2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PD-RT-ZoN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="-680"/>
+        </scene>
+        <!--Todos View Controller-->
+        <scene sceneID="XtE-Ng-n9s">
+            <objects>
+                <viewController storyboardIdentifier="ToDoVC" id="66l-1b-C91" customClass="TodosViewController" customModule="iExercise10_URLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xbX-Eb-yAR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xjc-IC-EMa">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v1W-CM-DVa">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="709"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T65-lM-2Ah">
+                                        <rect key="frame" x="0.0" y="719" width="353" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0kS-9L-mBL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="BACK"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="66l-1b-C91" eventType="touchUpInside" id="MNT-KV-K58"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fxJ-Vr-2jW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fxJ-Vr-2jW" firstAttribute="trailing" secondItem="xjc-IC-EMa" secondAttribute="trailing" constant="20" id="0AU-vu-mqK"/>
+                            <constraint firstItem="fxJ-Vr-2jW" firstAttribute="bottom" secondItem="xjc-IC-EMa" secondAttribute="bottom" id="1i6-iM-EaF"/>
+                            <constraint firstItem="xjc-IC-EMa" firstAttribute="top" secondItem="fxJ-Vr-2jW" secondAttribute="top" id="GAo-8B-3cd"/>
+                            <constraint firstItem="xjc-IC-EMa" firstAttribute="leading" secondItem="fxJ-Vr-2jW" secondAttribute="leading" constant="20" id="wt0-Ih-Ok1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="todosTextView" destination="v1W-CM-DVa" id="4Cm-v0-XM7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URK-G0-SKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084.7328244274809" y="-1346.4788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
